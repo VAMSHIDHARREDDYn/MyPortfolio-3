@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZVP8jB4v8TcQZn5JzKEl0l3hljO4B0M9bQ4y6E2yD8p6fBozD7wT1sSkv50nIw5K" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="C:\Users\nvams\OneDrive\Desktop\Portfolio-new\index.js"></script>
+
+    <style>
+        /* Your custom styles here */
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">VAMSHI</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="projects.html" onclick="toggleMenu();">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="home-text">
+            <h1>Hi, I'm <br>N VAMSHIDHAR <span>REDDY </span><br> Web Developer</h1>
+
+            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                Hire Me
+            </a>
+            
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Hire Me</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Would you like to hire me?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Understood</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="home-img">
+            <img src="profile.gif" alt="">
+        </div>
+        <div class="social">
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/VAMSHIDHARREDDYn"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/n-vamshidhar-reddy/"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="heading">
+            <h2>About</h2>
+            <p>My Introduction</p>
+        </div>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="profile.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <p>
+                    Hello! I'm N VAMSHIDHAR REDDY, a passionate Software Developer with a Bachelor's degree in Computer Science from KL University. 
+                    With hands-on experience in Python, Java, C, and expertise in web development technologies such as HTML, CSS, JavaScript, and frameworks 
+                    like Springboot and React, I thrive in crafting innovative solutions. I have worked on dynamic web applications and backend systems,
+                     integrating data seamlessly to meet business requirements. Currently, I’m honing my skills as a fellow at NxtWave's CCBP 4.0 Academy, 
+                     where I focus on building scalable, user-friendly software solutions. My experience spans across front-end development,
+                      back-end services, and cloud infrastructure, with a growing interest in developing machine learning models and distributed systems. 
+                    Driven by a desire to learn and innovate, I am seeking opportunities that challenge me to push boundaries in software development and 
+                    deliver high-quality products.    
+                </p>
+                <a href="Document 7.pdf">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-container bd-grid">
+            <div class="education-data">
+                <div class="education-names">
+                    <span class="education-name">Full Stack Web Development</span> 
+                    <p class="education-platform">NxtWave</p>
+                    <p class="education-duration">October 2022 - Present</p>
+                </div>
+            </div>
+            <div class="education-data">
+                <div class="education-names">
+                    <span class="education-name">B.Tech (Computer Science)</span>
+                    <p class="education-platform">KL University, Hyderabad</p>
+                    <p class="education-duration">June 2021 - April 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container bd-grid">
+            <div>
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class="bx bxl-html5 skills-icon"></i>
+                        <span class="skills-name">HTML</span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class="bx bxl-css3 skills-icon"></i>
+                        <span class="skills-name">CSS</span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class="bx bxl-javascript skills-icon"></i>
+                        <span class="skills-name">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class="bx bxl-react skills-icon"></i>
+                        <span class="skills-name">React</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class="bx bxl-java skills-icon"></i>
+                        <span class="skills-name">Java</span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class="bx bxl-python skills-icon"></i>
+                        <span class="skills-name">Python</span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class="bx bxl-nodejs skills-icon"></i>
+                        <span class="skills-name">Node.js</span>
+                    </div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class="bx bxl-spring skills-icon"></i>
+                        <span class="skills-name">Spring</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
